@@ -1921,7 +1921,21 @@ ip link show
 ✅ **Escritorio:** GNOME, KDE, Wayland vs X11  
 ✅ **Ajustes iniciales:** Drivers, codecs, Flatpak, backups  
 
-**Próximo paso:** Módulo 03 — Terminal y Shell. Comenzaremos a usar Linux realmente: la línea de comandos.
+:::info **Cómo abrir la terminal para el siguiente módulo**
+Antes de avanzar, familiarízate con abrir el emulador de terminal en tu entorno:
+
+| Escritorio | Método rápido |
+|---|---|
+| **GNOME** (Ubuntu) | `Ctrl+Alt+T` o busca "Terminal" en Actividades |
+| **KDE Plasma** | `Ctrl+Alt+T` o busca "Konsole" |
+| **WSL2** | Abre la distro desde el menú Inicio de Windows |
+| **Cualquier DE** | Click derecho en escritorio → "Abrir terminal" |
+| **Servidor SSH** | Conecta con `ssh usuario@ip` |
+
+En el siguiente módulo aprenderás exactamente qué es ese programa que acabas de abrir y cómo dominarlo.
+:::
+
+**Próximo paso:** [Módulo 03 — Terminal y Shell](/03-terminal-y-shell). Comenzaremos a usar Linux realmente: la línea de comandos.
 
 ---
 
