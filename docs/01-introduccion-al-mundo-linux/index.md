@@ -174,6 +174,85 @@ Históricamente, Richard Stallman y el proyecto GNU crearon herramientas UNIX du
 5. **Subsistema de I/O:** Control de periféricos
 6. **Control de acceso:** Verificación de permisos y seguridad
 
+### Tipos de kernel: monolítico vs. microkernel vs. híbrido
+
+Esta distinción es fundamental para entender por qué Linux se comporta como lo hace.
+
+#### Kernel monolítico
+
+Todo el código del SO (drivers, sistemas de archivos, red, scheduler) vive en **un único espacio de memoria privilegiado**.
+
+```
+┌─────────────────────────────────────────────────────┐
+│               KERNEL MONOLÍTICO                     │
+│  ┌──────────┬────────────┬────────────┬──────────┐  │
+│  │Scheduler │  Memoria   │    Red     │   VFS    │  │
+│  │ de CPU   │ (paging)   │  (TCP/IP)  │(ext4,xfs)│  │
+│  ├──────────┴────────────┴────────────┴──────────┤  │
+│  │           Drivers (USB, disk, GPU…)            │  │
+│  └────────────────────────────────────────────────┘  │
+│  Todo en Ring 0 — Comunicación por llamadas directas │
+└─────────────────────────────────────────────────────┘
+```
+
+**Ventajas:**
+- Rendimiento máximo (sin overhead de IPC entre componentes)
+- Acceso directo a funciones internas
+
+**Desventajas:**
+- Un bug en un driver puede colapsar **todo** el sistema
+- Difícil aislar fallos
+
+**Ejemplos:** Linux (monolítico **modular** — los drivers se cargan como módulos), FreeBSD
+
+#### Microkernel
+
+Solo las funciones más esenciales viven en kernel mode. El resto (drivers, sistemas de archivos) corren en **espacio de usuario**.
+
+```
+┌──────────────────────────────────────────────┐
+│  User Space                                  │
+│  ┌──────────┐ ┌──────────┐ ┌──────────────┐  │
+│  │ Driver   │ │ Driver   │ │  Servidor    │  │
+│  │ de Disco │ │  de Red  │ │  de Archivos │  │
+│  └──────────┘ └──────────┘ └──────────────┘  │
+├──────────────────────────────────────────────┤
+│  MICROKERNEL (Ring 0) — Solo lo esencial     │
+│  IPC · Scheduler básico · Gestión memoria   │
+└──────────────────────────────────────────────┘
+```
+
+**Ventajas:**
+- Fallo de un driver no colapsa el kernel
+- Más seguro y aislado
+
+**Desventajas:**
+- Comunicación entre componentes es más lenta (IPC overhead)
+- Complejidad de implementación
+
+**Ejemplos:** GNU/Hurd (Mach), QNX, seL4, Minix
+
+#### Kernel híbrido
+
+Intenta combinar lo mejor de ambos mundos: núcleo pequeño pero con algunos servicios en kernel space por rendimiento.
+
+**Ejemplos:** Windows NT, macOS (XNU = Mach microkernel + BSD components en kernel space)
+
+#### ¿Por qué Linux eligió monolítico modular?
+
+Linus Torvalds y Andrew Tanenbaum (creador de Minix) tuvieron un debate histórico en 1992 sobre esto. Linus eligió monolítico por **pragmatismo**: mejor rendimiento para hardware real, y los módulos cargables ofrecen la flexibilidad necesaria sin sacrificar velocidad.
+
+```bash
+# Ver módulos cargados actualmente
+lsmod
+
+# Cargar un módulo manualmente
+modprobe bluetooth
+
+# Ver información de un módulo
+modinfo ext4
+```
+
 ---
 
 ## 1.2 — Historia: de UNIX a Linux
