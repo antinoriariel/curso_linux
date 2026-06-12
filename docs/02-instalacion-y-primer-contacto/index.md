@@ -1935,7 +1935,7 @@ Antes de avanzar, familiarízate con abrir el emulador de terminal en tu entorno
 En el siguiente módulo aprenderás exactamente qué es ese programa que acabas de abrir y cómo dominarlo.
 :::
 
-**Próximo paso:** [Módulo 03 — Terminal y Shell](/03-terminal-y-shell). Comenzaremos a usar Linux realmente: la línea de comandos.
+**Próximo paso:** [Módulo 03 — Terminal y Shell](/terminal-y-shell). Comenzaremos a usar Linux realmente: la línea de comandos.
 
 ---
 

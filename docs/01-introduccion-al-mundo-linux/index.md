@@ -627,14 +627,14 @@ grep → ripgrep
 
 Verás estos principios a lo largo del curso:
 
-- **Scripting en Bash:** Composición de comandos simples → [Módulo 10](/10-shell-scripting-bash)
-- **Procesamiento de texto:** `grep`, `sed`, `awk` son especialistas → [Módulo 05](/05-archivos-y-procesamiento-de-texto)
-- **Pipes y redirección:** Conectar programas → [Módulo 03, sección 3.5](/03-terminal-y-shell#35--expansiones-de-la-shell)
-- **Archivos de configuración:** YAML, JSON, INI (texto plano) → [Módulo 03, sección 3.6](/03-terminal-y-shell#36--variables-de-entorno-y-configuración)
-- **Logs y monitoreo:** Todo observable → [Módulo 15](/15-monitorizacion-y-rendimiento)
+- **Scripting en Bash:** Composición de comandos simples → [Módulo 10](/shell-scripting-bash)
+- **Procesamiento de texto:** `grep`, `sed`, `awk` son especialistas → [Módulo 05](/archivos-y-procesamiento-de-texto)
+- **Pipes y redirección:** Conectar programas → [Módulo 03, sección 3.5](/terminal-y-shell#35--expansiones-de-la-shell)
+- **Archivos de configuración:** YAML, JSON, INI (texto plano) → [Módulo 03, sección 3.6](/terminal-y-shell#36--variables-de-entorno-y-configuraci%C3%B3n)
+- **Logs y monitoreo:** Todo observable → [Módulo 15](/monitorizacion-y-rendimiento)
 
 :::info **Próximo módulo relacionado**
-En el [Módulo 03 — La terminal y la shell](/03-terminal-y-shell) materializarás estos principios: aprenderás a combinar comandos con pipes, a redirigir entrada/salida y a construir pipelines UNIX que resuelven problemas reales.
+En el [Módulo 03 — La terminal y la shell](/terminal-y-shell) materializarás estos principios: aprenderás a combinar comandos con pipes, a redirigir entrada/salida y a construir pipelines UNIX que resuelven problemas reales.
 :::
 
 ---

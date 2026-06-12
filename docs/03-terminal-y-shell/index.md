@@ -13,9 +13,9 @@ import TabItem from '@theme/TabItem';
 
 La terminal es **la herramienta más poderosa de Linux** y el eje de todo este curso. Entenderla a fondo no es opcional: es la diferencia entre usar Linux y *dominar* Linux.
 
-En el [Módulo 01](/01-introduccion-al-mundo-linux) vimos que la **filosofía UNIX** propugna programas pequeños que se comunican mediante texto plano y se componen con pipes. La terminal es exactamente el lugar donde esa filosofía cobra vida: cada comando que escribes es una instancia de esa filosofía en acción.
+En el [Módulo 01](/introduccion-al-mundo-linux) vimos que la **filosofía UNIX** propugna programas pequeños que se comunican mediante texto plano y se componen con pipes. La terminal es exactamente el lugar donde esa filosofía cobra vida: cada comando que escribes es una instancia de esa filosofía en acción.
 
-En el [Módulo 02](/02-instalacion-y-primer-contacto) instalaste el sistema y abriste una terminal por primera vez. Ahora vamos a entender **qué es exactamente ese programa**, cómo interpreta lo que escribes, y cómo exprimirlo al máximo.
+En el [Módulo 02](/instalacion-y-primer-contacto) instalaste el sistema y abriste una terminal por primera vez. Ahora vamos a entender **qué es exactamente ese programa**, cómo interpreta lo que escribes, y cómo exprimirlo al máximo.
 
 ### Por qué la terminal sigue siendo relevante en 2024
 
@@ -254,7 +254,7 @@ ls -la /bin/sh
 ```
 
 :::warning
-**Distinción crítica para scripting:** Los scripts del sistema (`/etc/init.d/`, `/etc/cron.d/`) usan `#!/bin/sh`. Nunca uses características específicas de Bash en scripts con `#!/bin/sh`. Ver [Módulo 10 — Shell Scripting](/10-shell-scripting-bash) para más detalles.
+**Distinción crítica para scripting:** Los scripts del sistema (`/etc/init.d/`, `/etc/cron.d/`) usan `#!/bin/sh`. Nunca uses características específicas de Bash en scripts con `#!/bin/sh`. Ver [Módulo 10 — Shell Scripting](/shell-scripting-bash) para más detalles.
 :::
 
 #### Comparativa de shells
@@ -307,7 +307,7 @@ export PS1='\[\033[1;33m\]\t\[\033[0m\] \[\033[1;32m\]\u\[\033[0m\]@\[\033[1;34m
 
 #### Abrir la terminal según el entorno
 
-*(Referencia cruzada con [Módulo 02, sección 2.5](/02-instalacion-y-primer-contacto#251--entornos-de-escritorio-de))*
+*(Referencia cruzada con [Módulo 02, sección 2.5](/instalacion-y-primer-contacto#251--entornos-de-escritorio-de))*
 
 | Entorno | Emulador predeterminado | Atajo teclado |
 |---|---|---|
@@ -436,7 +436,7 @@ rm -- --raro-nombre-de-archivo
 
 ### Primeros comandos esenciales
 
-Todos estos comandos vienen de [GNU Coreutils](https://www.gnu.org/software/coreutils/) o del propio Bash, herencia directa de la filosofía GNU vista en el [Módulo 01](/01-introduccion-al-mundo-linux#el-proyecto-gnu-1983-1991).
+Todos estos comandos vienen de [GNU Coreutils](https://www.gnu.org/software/coreutils/) o del propio Bash, herencia directa de la filosofía GNU vista en el [Módulo 01](/introduccion-al-mundo-linux#el-proyecto-gnu-1983-1991).
 
 #### Información del sistema y del usuario
 
@@ -2599,7 +2599,7 @@ Este módulo te ha dado los fundamentos de la interfaz más poderosa de Linux:
 ✅ **Variables y entorno:** `PATH`, `.bashrc`, alias, funciones persistentes  
 ✅ **tmux:** Sesiones persistentes, paneles, flujo de trabajo profesional  
 
-**Próximo paso:** [Módulo 04 — Sistema de archivos](/04-sistema-de-archivos). Aplicaremos todo lo aprendido aquí para navegar, crear y manipular la jerarquía de directorios de Linux en profundidad.
+**Próximo paso:** [Módulo 04 — Sistema de archivos](/sistema-de-archivos). Aplicaremos todo lo aprendido aquí para navegar, crear y manipular la jerarquía de directorios de Linux en profundidad.
 
 ---
 
