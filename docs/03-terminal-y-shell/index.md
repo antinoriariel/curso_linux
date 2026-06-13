@@ -1509,6 +1509,10 @@ export PATH="$HOME/.local/bin:$PATH"
 # Instala herramientas personales aquí sin ser root
 ```
 
+:::tip **"command not found" después de instalar algo**
+Si instalas un programa y la shell dice `command not found`, hay tres sospechosos: la caché de rutas de Bash está desactualizada (`hash -r` la limpia), el binario se llama distinto que el paquete, o se instaló fuera del `PATH` (típico con `pip`, `cargo` o `go install`, que usan `~/.local/bin` o `~/.cargo/bin`). El diagnóstico completo está en el [Módulo 08, sección de problemas reales](/gestion-de-software#88--problemas-reales-y-soluciones).
+:::
+
 #### Tabla de variables de entorno importantes
 
 | Variable | Descripción | Ejemplo de valor |

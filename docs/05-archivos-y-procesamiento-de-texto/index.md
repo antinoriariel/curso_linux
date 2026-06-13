@@ -11,7 +11,7 @@ import TabItem from '@theme/TabItem';
 
 ## Introducción
 
-En el [Módulo 01](/introduccion-al-mundo-linux#13--la-filosofía-unix-y-el-software-libre) aprendiste el principio que da sentido a este módulo: **"escribe programas que hagan una cosa y la hagan bien, y que trabajen juntos"**. Este módulo es ese principio en estado puro.
+En el [Módulo 01](/introduccion-al-mundo-linux#13--la-filosofía-unix) aprendiste el principio que da sentido a este módulo: **"escribe programas que hagan una cosa y la hagan bien, y que trabajen juntos"**. Este módulo es ese principio en estado puro.
 
 En el [Módulo 04](/sistema-de-archivos) aprendiste a navegar y gestionar archivos. Pero un archivo es más que un nombre y un inodo: tiene un **contenido** que necesitas leer, filtrar, transformar y analizar. En Linux, todo eso se hace con herramientas de texto que se combinan mediante **tuberías (pipes)**.
 
@@ -280,7 +280,7 @@ Teclado ──→ [stdin  → proceso → stdout] ──→ Terminal
                               └→ stderr] ──→ Terminal
 ```
 
-Este modelo viene de POSIX (visto en [Módulo 01](/introduccion-al-mundo-linux#12--historia-unix-gnu-y-el-nacimiento-de-linux)) y es la base de toda la composición de comandos.
+Este modelo viene de POSIX (visto en [Módulo 01](/introduccion-al-mundo-linux#12--historia-de-unix-a-linux)) y es la base de toda la composición de comandos.
 
 ### Redirección de salida
 
@@ -1862,6 +1862,10 @@ https?://[a-zA-Z0-9][-a-zA-Z0-9.]*(?:/[^[:space:]]*)?
 ▶ Módulo 06 — Editores de texto
 │  → vim y nano para editar archivos cuando sed -i
 │  no es suficiente (ediciones interactivas complejas)
+
+▶ Módulo 08 — Gestión de software
+│  → tar + gzip/xz son el formato de los tarballs de código fuente
+│  → dpkg -l | awk, sort -rn para auditar paquetes instalados
 
 ▶ Módulo 09 — Procesos, servicios y systemd
 │  → journalctl piped con grep/awk para analizar servicios

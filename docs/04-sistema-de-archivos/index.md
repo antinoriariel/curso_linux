@@ -15,7 +15,7 @@ En el [Módulo 01](/introduccion-al-mundo-linux#3-todo-es-un-archivo) aprendimos
 
 En el [Módulo 03](/terminal-y-shell) adquiriste las herramientas para interactuar con la shell. Aquí pondremos esas herramientas en práctica: los comandos `ls`, `cd`, `find`, `cp`, `mv` y `rm` son el vocabulario diario de cualquier administrador y desarrollador Linux.
 
-En el [Módulo 02](/instalacion-y-primer-contacto#232--el-instalador-de-ubuntu-2404-pantalla-a-pantalla) viste brevemente el particionado del sistema (`/`, `/home`, `/boot/efi`). Ahora entenderás **por qué** esas particiones tienen esos nombres y qué contienen.
+En el [Módulo 02](/instalacion-y-primer-contacto#232--instalador-de-ubuntu-2404-pantalla-a-pantalla) viste brevemente el particionado del sistema (`/`, `/home`, `/boot/efi`). Ahora entenderás **por qué** esas particiones tienen esos nombres y qué contienen.
 
 ### Objetivos de aprendizaje
 

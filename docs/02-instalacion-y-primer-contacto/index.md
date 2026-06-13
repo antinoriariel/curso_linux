@@ -1455,6 +1455,10 @@ sudo apt install vlc
 
 **Flatpak** es un sistema de paquetes universal que funciona en cualquier distribución Linux.
 
+:::info
+Aquí solo lo dejamos configurado para tener las aplicaciones esenciales. En el [Módulo 08 — Gestión de software](/gestion-de-software) entenderás en profundidad cómo funcionan `apt`, los repositorios, Flatpak, Snap y AppImage, y cuándo conviene cada uno.
+:::
+
 ```bash
 # Instalar Flatpak
 sudo apt install flatpak

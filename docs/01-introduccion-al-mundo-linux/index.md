@@ -1728,7 +1728,7 @@ Este módulo te ha proporcionado:
 ✅ **Ecosistema:** Distribuciones y cuándo usar cada una  
 ✅ **Relevancia actual:** Linux en servidores, móviles, IoT y el futuro  
 
-**Próximo paso:** Módulo 02 — Instalación y primer contacto. Aplicaremos esta teoría instalando una distribución real.
+**Próximo paso:** [Módulo 02 — Instalación y primer contacto](/instalacion-y-primer-contacto). Aplicaremos esta teoría instalando una distribución real.
 
 ---
 
